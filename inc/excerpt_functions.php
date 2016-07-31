@@ -257,8 +257,8 @@ if ($noProcess==0){
 			
 		
 			
-				$content=findalignImage($maxchars,$content,$adjustImageSize,$float,$openWindow,$mediaImage,$thisLink,$noFollow,$catID,$thisLink,$stripSome,$useMediaImage);	
-				
+				$content=findalignImage($maxchars,$content,$adjustImageSize,$float,$mediaImage,$thisLink,$catID,$stripSome,$useMediaImage);
+
 				
 				
 			}
@@ -563,17 +563,14 @@ function rssmi_lightbox_filter($link,$targetWindow){
 
 	return 	$content;	
 	}
-	
-	
-	
-	
-	function findalignImage($maxchars,$content,$adjustImageSize,$float,$openWindow,$mediaImage,$thisLink,$noFollow,$catID,$thisLink,$stripSome,$useMediaImage){
-		
-		
-		
-		$leadmatch=0;	
-		global $YTmatch;
 
+
+
+
+	function findalignImage($maxchars,$content,$adjustImageSize,$float,$mediaImage,$thisLink,$catID,$stripSome,$useMediaImage){
+		
+		
+		
 		global $ftp;
 		global $RSSdefaultImage;
 		global $featuredImage;
